@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wallpaper"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".SplashScreen">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="106dp"
+        android:fontFamily="cursive"
+        android:gravity="center_horizontal"
+        android:text="My Notes App"
+        android:textAlignment="center"
+        android:textColor=" #FFD270"
+        android:textSize="60sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="346dp"
+        android:layout_height="106dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/aclonica"
+        android:gravity="center_horizontal"
+        android:text="Manage Your Day Well!!"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="#FCEC52"
+        android:textSize="34sp"
+        android:textStyle="bold" />
+</LinearLayout>
