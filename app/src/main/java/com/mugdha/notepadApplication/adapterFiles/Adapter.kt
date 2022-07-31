@@ -44,5 +44,4 @@ class Adapter(var data: List<CardInfo>) : RecyclerView.Adapter<Adapter.viewHolde
         return data.size
     }
 
-
 }
