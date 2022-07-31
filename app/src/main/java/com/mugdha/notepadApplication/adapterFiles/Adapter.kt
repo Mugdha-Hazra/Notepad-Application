@@ -1,4 +1,4 @@
-package com.mugdha.notepadApplication
+package com.mugdha.notepadApplication.adapterFiles
 
 import android.content.Intent
 import android.graphics.Color
@@ -6,8 +6,9 @@ import android.view.LayoutInflater
 import android.view.View
 import androidx.recyclerview.widget.RecyclerView
 import android.view.ViewGroup
-//import com.example.notepad_todo.R
 import com.mugdha.notepadApplication.R
+//import com.example.notepad_todo.R
+import com.mugdha.notepadApplication.activity.UpdateCard
 import kotlinx.android.synthetic.main.view.view.*
 
 class Adapter(var data: List<CardInfo>) : RecyclerView.Adapter<Adapter.viewHolder>() {

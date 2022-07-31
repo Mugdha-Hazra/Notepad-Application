@@ -1,4 +1,4 @@
-package com.mugdha.notepadApplication
+package com.mugdha.notepadApplication.databaseFiles
 
 import androidx.room.Database
 import androidx.room.RoomDatabase

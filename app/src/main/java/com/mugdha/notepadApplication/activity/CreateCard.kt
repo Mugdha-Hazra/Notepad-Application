@@ -1,10 +1,14 @@
-package com.mugdha.notepadApplication
+package com.mugdha.notepadApplication.activity
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import androidx.room.Room
+import com.mugdha.notepadApplication.adapterFiles.DataObject
+import com.mugdha.notepadApplication.databaseFiles.Entity
+import com.mugdha.notepadApplication.R
+import com.mugdha.notepadApplication.databaseFiles.myDatabase
 import kotlinx.android.synthetic.main.activity_create_card.*
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch

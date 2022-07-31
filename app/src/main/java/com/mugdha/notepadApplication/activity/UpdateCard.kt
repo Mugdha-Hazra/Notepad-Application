@@ -1,11 +1,14 @@
-package com.mugdha.notepadApplication
+package com.mugdha.notepadApplication.activity
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
 import androidx.room.Room
-import kotlinx.android.synthetic.main.activity_create_card.*
+import com.mugdha.notepadApplication.adapterFiles.DataObject
+import com.mugdha.notepadApplication.databaseFiles.Entity
+import com.mugdha.notepadApplication.R
+import com.mugdha.notepadApplication.databaseFiles.myDatabase
 import kotlinx.android.synthetic.main.activity_create_card.create_priority
 import kotlinx.android.synthetic.main.activity_create_card.create_title
 import kotlinx.android.synthetic.main.activity_update_card.*

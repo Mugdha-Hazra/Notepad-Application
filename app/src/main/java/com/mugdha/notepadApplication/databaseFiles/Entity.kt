@@ -1,4 +1,4 @@
-package com.mugdha.notepadApplication
+package com.mugdha.notepadApplication.databaseFiles
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey

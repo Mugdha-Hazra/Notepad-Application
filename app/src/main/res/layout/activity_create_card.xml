@@ -8,7 +8,7 @@
     android:gravity="center"
     android:orientation="vertical"
     android:padding="20dp"
-    tools:context=".CreateCard">
+    tools:context=".activity.CreateCard">
 
     <TextView
         android:layout_width="match_parent"

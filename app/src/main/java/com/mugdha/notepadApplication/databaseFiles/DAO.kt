@@ -1,6 +1,7 @@
-package com.mugdha.notepadApplication
+package com.mugdha.notepadApplication.databaseFiles
 
 import androidx.room.*
+import com.mugdha.notepadApplication.adapterFiles.CardInfo
 
 @Dao
 

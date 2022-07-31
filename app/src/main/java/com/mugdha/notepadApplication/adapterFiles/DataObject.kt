@@ -1,4 +1,4 @@
-package com.mugdha.notepadApplication
+package com.mugdha.notepadApplication.adapterFiles
 
 object DataObject {
     var listdata = mutableListOf<CardInfo>()
