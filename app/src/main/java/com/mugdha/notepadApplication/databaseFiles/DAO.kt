@@ -20,4 +20,7 @@ interface DAO {
 
     @Query("Select * from to_do")
     fun getTask(): List<CardInfo>
+
+    @Query("Delete from to_do where title =:title")
+    fun deleteTask(title:String)
 }

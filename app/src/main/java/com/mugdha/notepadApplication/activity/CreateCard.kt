@@ -10,6 +10,7 @@ import com.mugdha.notepadApplication.databaseFiles.Entity
 import com.mugdha.notepadApplication.R
 import com.mugdha.notepadApplication.databaseFiles.myDatabase
 import kotlinx.android.synthetic.main.activity_create_card.*
+import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
 

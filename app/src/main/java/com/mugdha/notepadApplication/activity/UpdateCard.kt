@@ -3,6 +3,7 @@ package com.mugdha.notepadApplication.activity
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.widget.Toast
 import androidx.room.Room
 import com.mugdha.notepadApplication.adapterFiles.DataObject
@@ -31,6 +32,7 @@ class UpdateCard : AppCompatActivity() {
             create_priority.setText(priority)
 
             delete_button.setOnClickListener {
+                Log.v("Mugdha","pos main $pos")
                 DataObject.deleteData(pos)
                 GlobalScope.launch {
                     database.dao().deleteTask(

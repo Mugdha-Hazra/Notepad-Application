@@ -4,27 +4,26 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/wide"
+    android:background="@drawable/f"
     android:gravity="center"
     android:orientation="vertical"
     android:padding="20dp"
     tools:context=".activity.CreateCard">
 
     <TextView
-        android:layout_width="match_parent"
+        android:layout_width="330dp"
         android:layout_height="wrap_content"
-        android:fontFamily="cursive"
+        android:fontFamily="sans-serif-condensed-medium"
         android:gravity="center"
         android:text="Enter Details"
         android:textAlignment="center"
-        android:textColor="#F3D53F"
-        android:textSize="48sp"
-        android:textStyle="bold" />
+        android:textColor="#0C0B02"
+        android:textSize="34sp" />
 
     <EditText
         android:id="@+id/create_title"
-        android:layout_width="wrap_content"
-        android:layout_height="67dp"
+        android:layout_width="305dp"
+        android:layout_height="73dp"
         android:layout_marginTop="30dp"
         android:background="@drawable/dpic"
         android:ems="10"
@@ -37,12 +36,12 @@
 
     <EditText
         android:id="@+id/create_priority"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="301dp"
+        android:layout_height="49dp"
         android:layout_marginTop="35dp"
         android:background="@color/purple_200"
         android:ems="10"
-        android:fontFamily="casual"
+        android:fontFamily="@font/aladin"
         android:hint="Priority"
         android:inputType="textPersonName"
         android:padding="15dp"
@@ -51,12 +50,16 @@
 
     <Button
         android:id="@+id/save_button"
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
+        android:layout_width="240dp"
+        android:layout_height="56dp"
         android:layout_marginTop="35dp"
-        android:fontFamily="cursive"
-        android:text="Save"
+        android:fontFamily="monospace"
+        android:text=" Save Task"
+        android:textColor="#FFFFFF"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:cornerRadius="15dp" />
+        app:cornerRadius="20dp"
+        app:icon="@android:drawable/ic_menu_save"
+        app:iconTint="#FAF8F8"
+        app:strokeColor="#FBFBFB" />
 </LinearLayout>

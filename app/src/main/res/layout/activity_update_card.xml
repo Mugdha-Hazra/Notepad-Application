@@ -4,16 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/fluid"
+    android:background="@drawable/mages"
     android:gravity="center"
     android:orientation="vertical"
     android:padding="20dp"
     tools:context=".activity.UpdateCard">
 
     <TextView
-        android:layout_width="match_parent"
+        android:layout_width="341dp"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/aclonica"
+        android:fontFamily="@font/aladin"
         android:gravity="center"
         android:text="Update details"
         android:textColor="#130A1E"
@@ -21,8 +21,8 @@
 
     <EditText
         android:id="@+id/create_title"
-        android:layout_width="362dp"
-        android:layout_height="wrap_content"
+        android:layout_width="359dp"
+        android:layout_height="67dp"
         android:layout_marginTop="30dp"
         android:background="@android:drawable/editbox_background"
         android:ems="10"
@@ -45,16 +45,19 @@
 
     <LinearLayout
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="92dp"
         android:layout_marginTop="40dp"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:paddingTop="5dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="30dp">
 
         <Button
             android:id="@+id/update_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:fontFamily="@font/aclonica"
+            android:layout_weight="2"
+            android:fontFamily="monospace"
             android:text="update"
             android:textSize="20sp"
             android:textStyle="bold"
@@ -68,9 +71,9 @@
         <Button
             android:id="@+id/delete_button"
             android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:fontFamily="@font/aclonica"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:fontFamily="monospace"
             android:text="delete"
             android:textSize="20sp"
             android:textStyle="bold"

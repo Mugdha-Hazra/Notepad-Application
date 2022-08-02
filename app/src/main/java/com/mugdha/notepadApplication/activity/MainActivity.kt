@@ -3,13 +3,24 @@ package com.mugdha.notepadApplication.activity
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
+import android.view.View
+import androidx.core.content.ContextCompat.startActivity
+import androidx.recyclerview.widget.ItemTouchHelper
 import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import androidx.room.Room
+import com.google.android.material.snackbar.Snackbar
 import com.mugdha.notepadApplication.*
 import com.mugdha.notepadApplication.adapterFiles.DataObject
 import com.mugdha.notepadApplication.adapterFiles.Adapter
+import com.mugdha.notepadApplication.adapterFiles.CardInfo
+import com.mugdha.notepadApplication.adapterFiles.DataObject.deleteData
+import com.mugdha.notepadApplication.databaseFiles.Entity
 import com.mugdha.notepadApplication.databaseFiles.myDatabase
+import kotlinx.android.synthetic.main.activity_create_card.*
 import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.view.view.*
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
 
@@ -20,6 +31,35 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        database = Room.databaseBuilder(
+            applicationContext, myDatabase::class.java, "To_Do"
+        ).build()
+        val recyclerView=findViewById<RecyclerView>(R.id.recycler_view)
+        recyclerView.apply {
+            layoutManager = LinearLayoutManager(this@MainActivity)
+            recycler_view.adapter = Adapter(DataObject.getAllData())
+        }
+
+        val swipeToDeleteCallBack=object:SwipeToDeleteCallBack()
+        {
+            override fun onSwiped(viewHolder: RecyclerView.ViewHolder, direction: Int)
+            {
+                val pos = viewHolder.adapterPosition
+                Log.v("Mugdha","pos main $pos")
+                if (pos != -1)
+                {
+                    val title = viewHolder.itemView.title
+                    val priority =viewHolder.itemView.priority
+                    DataObject.deleteData(pos)
+                    GlobalScope.launch {
+                        database.dao().deleteTask(title.text.toString())
+                    }
+                }
+                setRecycler()
+            }
+        }
+        val itemTouchHelper=ItemTouchHelper(swipeToDeleteCallBack)
+        itemTouchHelper.attachToRecyclerView(recyclerView)
         database = Room.databaseBuilder(
             applicationContext, myDatabase::class.java, "To_Do"
         ).build()
@@ -43,5 +83,4 @@ class MainActivity : AppCompatActivity() {
         recycler_view.adapter = Adapter(DataObject.getAllData())
         recycler_view.layoutManager = LinearLayoutManager(this)
     }
-
 }
