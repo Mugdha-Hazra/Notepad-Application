@@ -49,7 +49,6 @@ class MainActivity : AppCompatActivity() {
                 if (pos != -1)
                 {
                     val title = viewHolder.itemView.title
-                    val priority =viewHolder.itemView.priority
                     DataObject.deleteData(pos)
                     GlobalScope.launch {
                         database.dao().deleteTask(title.text.toString())
