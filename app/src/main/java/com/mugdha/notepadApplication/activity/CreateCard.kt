@@ -24,6 +24,34 @@ class CreateCard : AppCompatActivity() {
             applicationContext, myDatabase::class.java, "To_Do"
         ).build()
 
+        //starting of demo code
+        //for profiler
+        for(i in 1..10) {
+            val a = (0..1000).random()
+            val b = (0..1000).random()
+           // val c= getRandomWords()
+            //get random word from list
+
+           Log.v("Mugdha", "$a + $b = ${a+b}")
+            var title = a.toString()
+            var priority = b.toString()
+            DataObject.setData(title, priority)
+            GlobalScope.launch {
+                database.dao().insertTask(Entity(0, title, priority))
+            }
+            GlobalScope.launch {
+                Log.i("Mugdha", database.dao().getTask().toString())
+            }
+//            val intent = Intent(this, MainActivity::class.java)
+//            startActivity(intent)
+        }
+
+            val intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
+
+
+        //write a ending of demo code
+
         save_button.setOnClickListener {
             if (create_title.text.toString().trim { it <= ' ' }
                     .isNotEmpty() && create_priority.text.toString().trim { it <= ' ' }
@@ -43,3 +71,11 @@ class CreateCard : AppCompatActivity() {
         }
     }
 }
+//write a function to generate random words from dictionary
+//fun getRandomWords(): String{
+//    var z=arrayListOf<String>("apple","banana", "cherry", "date", "egg", "fish", "grape", "honey", "ice", "juice"
+//        , "kiwi", "lemon", "mango", "orange", "pear", "pineapple", "plum", "raspberry", "strawberry", "tomato", "watermelon")
+//    val random = (0..z.size).random()
+//    return z[random]
+//
+//}

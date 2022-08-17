@@ -63,7 +63,17 @@ class MainActivity : AppCompatActivity() {
             applicationContext, myDatabase::class.java, "To_Do"
         ).build()
 
+        //for using profiler  --> demo code started
+        //i=0
+//        for (i in 1..3) {
+//            println(i)
+//            val intent = Intent(this, CreateCard::class.java)
+//            startActivity(intent)
+//        }
 
+//            val intent = Intent(this, MainActivity::class.java)
+//            startActivity(intent)
+        // demo code ended
         add.setOnClickListener {
             val intent = Intent(this, CreateCard::class.java)
             startActivity(intent)
