@@ -49,9 +49,10 @@ class Adapter(var data: List<CardInfo>) : RecyclerView.Adapter<Adapter.viewHolde
             .placeholder(com.mugdha.notepadApplication.R.drawable.ic_launcher_background)
             .into(holder.imageView)
         when (data[position].priority.toLowerCase()) {
+
             "high" -> holder.layout.setBackgroundColor(Color.parseColor("#CF4526"))
             "medium" -> holder.layout.setBackgroundColor(Color.parseColor("#6DB8C5"))
-            else -> holder.layout.setBackgroundColor(Color.parseColor("#F686BD"))
+            "low" -> holder.layout.setBackgroundColor(Color.parseColor("#F686BD"))
         }
         holder.title.text = data[position].title
         holder.priority.text = data[position].priority

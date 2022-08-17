@@ -10,6 +10,7 @@ import com.mugdha.notepadApplication.databaseFiles.Entity
 import com.mugdha.notepadApplication.R
 import com.mugdha.notepadApplication.databaseFiles.myDatabase
 import kotlinx.android.synthetic.main.activity_create_card.*
+import kotlinx.android.synthetic.main.view.*
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
@@ -24,17 +25,19 @@ class CreateCard : AppCompatActivity() {
             applicationContext, myDatabase::class.java, "To_Do"
         ).build()
 
-        //starting of demo code
+        //starting of demo code --->
         //for profiler
-        for(i in 1..10) {
-            val a = (0..1000).random()
-            val b = (0..1000).random()
+        for(i in 1..1000) {
+            val a = (100..1000).random()
+            val b = (0..2).random()
            // val c= getRandomWords()
             //get random word from list
-
            Log.v("Mugdha", "$a + $b = ${a+b}")
             var title = a.toString()
             var priority = b.toString()
+            if(b==0) priority = "Low"
+            else if(b==1) priority = "Medium"
+            else priority = "High"
             DataObject.setData(title, priority)
             GlobalScope.launch {
                 database.dao().insertTask(Entity(0, title, priority))
@@ -50,7 +53,7 @@ class CreateCard : AppCompatActivity() {
             startActivity(intent)
 
 
-        //write a ending of demo code
+        //write a ending of demo code --->
 
         save_button.setOnClickListener {
             if (create_title.text.toString().trim { it <= ' ' }
