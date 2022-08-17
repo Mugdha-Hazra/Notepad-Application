@@ -25,7 +25,7 @@ import kotlinx.android.synthetic.main.view.view.*
 class Adapter(var data: List<CardInfo>) : RecyclerView.Adapter<Adapter.viewHolder>() {
      // private lateinit var binding: ViewBinding
      private val image = "https://cdn.pixabay.com/photo/2018/05/03/21/49/android-3372580_1280.png"
-    private val image2 = "http://commondatastorage.googleapis.com/codeskulptor-demos/riceracer_assets/img/tree_2.png"
+    private val image2 = "https://commondatastorage.googleapis.com/codeskulptor-demos/riceracer_assets/img/tree_2.png"
     class viewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         var title = itemView.title
         var priority = itemView.priority
@@ -40,7 +40,7 @@ class Adapter(var data: List<CardInfo>) : RecyclerView.Adapter<Adapter.viewHolde
 
     override fun onBindViewHolder(holder: viewHolder, position: Int) {
         Glide.with(holder.imageView.context)
-            .load(image)
+            .load(image2)
             .fitCenter()
             .circleCrop()
             .override(200, 200)
