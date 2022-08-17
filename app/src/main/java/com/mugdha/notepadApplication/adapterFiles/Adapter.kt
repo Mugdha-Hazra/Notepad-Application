@@ -40,7 +40,7 @@ class Adapter(var data: List<CardInfo>) : RecyclerView.Adapter<Adapter.viewHolde
 
     override fun onBindViewHolder(holder: viewHolder, position: Int) {
         Glide.with(holder.imageView.context)
-            .load(image2)
+            .load(image)
             .fitCenter()
             .circleCrop()
             .override(200, 200)
