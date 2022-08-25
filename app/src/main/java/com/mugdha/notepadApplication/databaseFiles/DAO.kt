@@ -6,10 +6,10 @@ import com.mugdha.notepadApplication.adapterFiles.CardInfo
 @Dao
 
 interface DAO {
-    @Insert
+    @Insert(onConflict = OnConflictStrategy.REPLACE)
     fun insertTask(entity: Entity)
 
-    @Update
+    @Update(onConflict = OnConflictStrategy.REPLACE)
     fun updateTask(entity: Entity)
 
     @Delete

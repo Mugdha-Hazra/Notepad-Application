@@ -3,7 +3,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.mugdha.notepadApplication">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+    //read external storage permission
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    //permission for camera
+    <uses-permission android:name="android.permission.CAMERA" />
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -15,11 +20,20 @@
         android:theme="@style/Theme.NotePad_Todo"
         tools:targetApi="31">
         <activity
-            android:name="com.mugdha.notepadApplication.activity.UpdateCard"
+            android:name=".activity.three"
+            android:exported="false" />
+        <activity
+            android:name=".activity.two"
+            android:exported="false" />
+        <activity
+            android:name=".activity.one"
+            android:exported="false" />
+        <activity
+            android:name=".activity.UpdateCard"
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />
         <activity
-            android:name="com.mugdha.notepadApplication.activity.SplashScreen"
+            android:name=".activity.SplashScreen"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -28,11 +42,11 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.mugdha.notepadApplication.activity.CreateCard"
+            android:name=".activity.CreateCard"
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />
         <activity
-            android:name="com.mugdha.notepadApplication.activity.MainActivity"
+            android:name=".activity.MainActivity"
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />
 

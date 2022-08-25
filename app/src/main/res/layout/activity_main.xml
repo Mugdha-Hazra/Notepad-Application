@@ -15,28 +15,54 @@
         android:gravity="center"
         android:orientation="horizontal">
 
+        <Button
+            android:id="@+id/imgbtn"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="0"
+            app:icon="@android:drawable/ic_menu_gallery"
+            app:iconTint="#DCEC47"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <Button
+            android:id="@+id/profile_button"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="0"
+            android:backgroundTint="#003A35"
+            android:text="@string/plus"
+            android:textAlignment="center"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            app:icon="@android:drawable/ic_menu_myplaces" />
+
         <TextView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:fontFamily="@font/graduate"
+            android:layout_weight="3"
+            android:fontFamily="@font/kavoon"
             android:text="@string/your_notes"
             android:textAlignment="center"
             android:textColor="#000000"
-            android:textSize="40sp"
-            android:textStyle="bold" />
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:typeface="normal" />
 
         <Button
             android:id="@+id/deleteAll"
-            android:layout_width="60dp"
-            android:layout_height="60dp"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
             android:layout_marginEnd="10dp"
+            android:layout_weight="0"
             android:backgroundTint="#B31313"
             android:text="@string/plus"
             android:textAlignment="center"
             android:textSize="28sp"
             android:textStyle="bold"
             app:icon="@android:drawable/ic_menu_delete" />
+
     </LinearLayout>
 
     <FrameLayout
