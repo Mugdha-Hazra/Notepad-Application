@@ -15,13 +15,6 @@
  
  
 ## Some UI Screen Sorts
-![WhatsApp Image 2022-12-01 at 8 46 27 PM (1)](https://user-images.githubusercontent.com/63424869/205090131-1cf562ef-1e8b-43ef-a372-766321ef53e9.jpeg)
-![WhatsApp Image 2022-12-01 at 8 46 27 PM](https://user-images.githubusercontent.com/63424869/205090142-5e88c824-8b8f-4f12-bd88-d3d37cd68427.jpeg)
-![WhatsApp Image 2022-12-01 at 8 46 26 PM (4)](https://user-images.githubusercontent.com/63424869/205090152-582bbfce-1fe2-4dcf-9fb5-8fe177f71aaf.jpeg)
-![WhatsApp Image 2022-12-01 at 8 46 26 PM (3)](https://user-images.githubusercontent.com/63424869/205090159-e9eb7eec-76ea-4645-ac9f-7178f5e40b69.jpeg)
-![WhatsApp Image 2022-12-01 at 8 46 26 PM (2)](https://user-images.githubusercontent.com/63424869/205090165-fe8acba1-87f3-4ee2-8912-aabd82680297.jpeg)
-![WhatsApp Image 2022-12-01 at 8 46 26 PM (1)](https://user-images.githubusercontent.com/63424869/205090172-40bd059f-ee36-44d9-8637-4ccf034d1bbf.jpeg)
-![WhatsApp Image 2022-12-01 at 8 46 25 PM (3)](https://user-images.githubusercontent.com/63424869/205090587-e66dd35c-0e3c-4dfb-ac54-7d4b59c77211.jpeg)
-![WhatsApp Image 2022-12-01 at 8 46 ![WhatsApp Image 2022-12-01 at 8 46 24 PM (1)](https://user-images.githubusercontent.com/63424869/205090724-b40e98f3-360f-4b0e-94b7-0aba0d41cc8e.jpeg)
-![WhatsApp Image 2022-12-01 at 8 46 25 PM (4)](https://user-images.githubusercontent.com/63424869/205093314-139314cd-5c69-4e8a-b69d-8e8e06f07726.jpeg)
-![WhatsApp Image 2022-12-02 at 9 23 57 AM](https://user-images.githubusercontent.com/63424869/205211327-3342d17d-ecb2-4d89-95de-91f5b9fe6093.jpeg)
+
+ |<img src="https://user-images.githubusercontent.com/63424869/205090131-1cf562ef-1e8b-43ef-a372-766321ef53e9.jpeg" width="300" height ="600"> |<img src="https://user-images.githubusercontent.com/63424869/205090142-5e88c824-8b8f-4f12-bd88-d3d37cd68427.jpeg" width="300" height ="600"> | <img src="https://user-images.githubusercontent.com/63424869/205090152-582bbfce-1fe2-4dcf-9fb5-8fe177f71aaf.jpeg" width="300" height ="600"> | <img src="https://user-images.githubusercontent.com/63424869/205090159-e9eb7eec-76ea-4645-ac9f-7178f5e40b69.jpeg" width="300" height ="600"> | <img src="https://user-images.githubusercontent.com/63424869/205090165-fe8acba1-87f3-4ee2-8912-aabd82680297.jpeg" width="300" height ="600"> | <img src="https://user-images.githubusercontent.com/63424869/205090587-e66dd35c-0e3c-4dfb-ac54-7d4b59c77211.jpeg" width="300" height ="600"> | <img src="https://user-images.githubusercontent.com/63424869/205090724-b40e98f3-360f-4b0e-94b7-0aba0d41cc8e.jpeg" width="300" height ="600"> | <img src="https://user-images.githubusercontent.com/63424869/205093314-139314cd-5c69-4e8a-b69d-8e8e06f07726.jpeg" width="300" height ="600"> |<img src="https://user-images.githubusercontent.com/63424869/205211327-3342d17d-ecb2-4d89-95de-91f5b9fe6093.jpeg" width="300" height ="600"> |
+
