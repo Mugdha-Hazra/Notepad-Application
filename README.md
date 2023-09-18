@@ -4,11 +4,11 @@
  2. Delete previously created notes.
  3. Delete all the previous notes at a single click.
  4. Swipe to delete notes.
- 5. Login authcation for multiple users.
- 6. Profile page with capture camera profile and choose 
- 7. Mobile and Name enter into the database
- 8. Glide internal working for loading image from url
- 9. UI profiling screenshot while loading the UI into the Glide
+ 5. Login authentication for multiple users.
+ 6. Profile page with capture camera profile and choose.
+ 7. Mobile and Name enter into the database.
+ 8. Glide internal working for loading image from url.
+ 9. UI profiling screenshot while loading the UI into the Glide.
 10. Added register user with shared preference added login and logout using shared Preference.
 11. Profiled the app and found the janky frame to be less than 16.67%.
  
